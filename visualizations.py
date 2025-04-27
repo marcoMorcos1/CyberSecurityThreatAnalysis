@@ -28,7 +28,7 @@ def plot_confusion_matrices(y_test, y_pred, attack_type_encoder, attack_source_e
     plt.show()
 
 def plot_feature_importances(model, feature_names):
-    importances = model.estimators_[0].feature_importances_  # First output model
+    importances = model.estimators_[0].feature_importances_ 
     indices = importances.argsort()[::-1]
 
     plt.figure(figsize=(10, 6))
